@@ -1,0 +1,25 @@
+// Bootstrapped View Styles
+// ========================================
+
+  // This is just for show.
+  // Styles don't use component library at the moment.
+
+.page__header {
+  background: #007BC1;
+  padding: 5rem 2rem 2rem;
+
+  .title {
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  .title--topper {
+    background-color: #E9EAE6;
+    display: block;
+    height: 2px;
+    width: 5rem;
+  }
+}
