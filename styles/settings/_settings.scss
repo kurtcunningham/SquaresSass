@@ -1,4 +1,14 @@
 // Settings Stylesheets
 // ========================================
 
+// General
 @import "reset";
+
+// Variables
+@import "variables/colors";
+@import "variables/grid";
+@import "variables/typography";
+
+// Mixins
+@import "mixins/misc";
+@import "mixins/typography";

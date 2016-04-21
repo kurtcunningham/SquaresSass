@@ -1,0 +1,49 @@
+// Base Typography
+// ========================================
+
+// Font Styles Global
+body {
+  @include font-type($primary-sans-serif, normal, 400);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Font Sizes
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-type($primary-sans-serif, normal, 600);
+  color: $black-base;
+  line-height: 1.0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { @include f-s-alpha;   }
+h2 { @include f-s-bravo;   }
+h3 { @include f-s-charlie  }
+h4 { @include f-s-delta;   }
+h5 { @include f-s-echo;    }
+h6 { @include f-s-foxtrot; }
+
+p {
+  @include font-type($primary-sans-serif, normal, 400);
+  @include f-s-foxtrot;
+  color: $black-base;
+  line-height: $base-line-height;
+}
+
+
+// Text Alignment
+@each $text-alignment in $text-alignments {
+  $name:   nth($text-alignment, 1);
+  $align:  nth($text-alignment, 2);
+
+  .text--#{$name} {
+    text-align: $align;
+  }
+}

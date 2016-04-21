@@ -1,0 +1,68 @@
+// Typography Mixins
+// ========================================
+
+// Font Sizes
+@mixin f-s-giga {
+  font-size:   $f-s-giga;
+  line-height: $f-s-giga * 1.5;
+}
+
+@mixin f-s-mega {
+  font-size:   $f-s-mega;
+  line-height: $f-s-mega * 1.5;
+}
+
+@mixin f-s-alpha {
+  font-size:   $f-s-alpha;
+  line-height: $f-s-alpha * 1.5;
+}
+
+@mixin f-s-bravo {
+  font-size:   $f-s-bravo;
+  line-height: $f-s-bravo * 1.5;
+}
+
+@mixin f-s-charlie {
+  font-size:   $f-s-charlie;
+  line-height: $f-s-charlie * 1.5;
+}
+
+@mixin f-s-delta {
+  font-size:   $f-s-delta;
+  line-height: $f-s-delta * 1.5;
+}
+
+@mixin f-s-echo {
+  font-size:   $f-s-echo;
+  line-height: $f-s-echo * 1.5;
+}
+
+@mixin f-s-foxtrot {
+  font-size:   $f-s-foxtrot;
+  line-height: $f-s-foxtrot * 1.5;
+}
+
+@mixin f-s-golf {
+  font-size:   $f-s-golf;
+  line-height: $f-s-golf * 1.5;
+}
+
+@mixin f-s-hotel {
+    font-size:   $f-s-hotel;
+    line-height: $f-s-hotel * 1.5;
+}
+
+// Font Styles
+@mixin font-type($type, $style, $weight){
+  font-family: $type;
+  font-style:  $style;
+  font-weight: $weight;
+}
+
+// Text Shadow
+@mixin text-shadow($dim: 0 0 0 0, $color: $black-base){
+  -webkit-text-shadow: $dim $color;
+  -moz-text-shadow:    $dim $color;
+  -o-text-shadow:      $dim $color;
+  text-shadow:         $dim $color;
+}

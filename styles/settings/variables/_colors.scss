@@ -1,0 +1,37 @@
+// Color Variables
+// ========================================
+
+// Black
+$black-base:   #000000;
+
+// Blue
+$blue-base:    #007BC1;
+
+// Grey
+$grey-base:    #D8D8D8;
+$grey-dark:    #808080;
+
+// Tan
+$tan-light:    #F7F8F4;
+$tan-base:     #F5F4F0;
+$tan-dark:     #E9EAE6;
+
+// White
+$white-light:  #FAFAFA;
+$white-base:   #FFFFFF;
+$white-dark:   #F5F5F6;
+
+
+// Color Palette List
+$colors: (
+  black-base    $black-base,
+  blue-base     $blue-base,
+  grey-base     $grey-base,
+  grey-dark     $grey-dark,
+  tan-light     $tan-light,
+  tan-base      $tan-base,
+  tan-dark      $tan-dark,
+  white-light   $white-light,
+  white-base    $white-base,
+  white-dark    $white-dark
+);

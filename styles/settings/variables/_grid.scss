@@ -1,0 +1,13 @@
+// Grid Variables
+// ========================================
+
+// Structure
+$grid-columns:       12;
+$grid-margin:        0 auto;
+$grid-max-width:     65em;
+$grid-width:         100%;
+
+
+// Breakpoints
+$breakpoint-small:   "only screen and (min-width: 20em)";
+$breakpoint-medium:  "only screen and (min-width: 30em)";

@@ -1,0 +1,43 @@
+// Grid Styles
+// ========================================
+
+
+// Border Box Rule
+*,
+*:after,
+*:before {
+  @include border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Container & Row Structure
+.container {
+  margin: $grid-margin;
+  max-width: $grid-max-width;
+  width: $grid-width;
+}
+
+.container,
+.row {
+  @include clearfix;
+}
+
+// Columns
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+// Columns Loop
+@media #{$breakpoint-medium} {
+  @for $i from 1 through $grid-columns {
+
+    .column-#{$i} {
+      width: 100% / 12 * $i;
+    }
+  }
+}

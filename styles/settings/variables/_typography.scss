@@ -1,0 +1,40 @@
+// Typography Variables
+// ========================================
+
+// Font Family
+$primary-sans-serif: 'Open Sans', Helvetica, sans-serif;
+
+// Font Sizes
+$font-size-base: 14px;
+
+$f-s-giga:       75px;
+$f-s-mega:       50px;
+
+$f-s-alpha:      35px;
+$f-s-bravo:      24px;
+$f-s-charlie:    21px;
+$f-s-delta:      18px;
+$f-s-echo:       16px;
+$f-s-foxtrot:    $font-size-base;
+$f-s-golf:       12px;
+$f-s-hotel:      11px;
+
+
+// Line Heights
+$base-line-height: $font-size-base * 1.5;
+$base-line-small:  $font-size-base;
+
+
+// Text Alignment
+$text-align-center:  center;
+$text-align-left:    left;
+$text-align-justify: justify;
+$text-align-right:   right;
+
+// Text Alignment List
+$text-alignments: (
+  center    $text-align-center,
+  left      $text-align-left,
+  justify   $text-align-justify,
+  right     $text-align-right
+);
