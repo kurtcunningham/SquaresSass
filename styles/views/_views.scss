@@ -54,7 +54,7 @@ $base-font-weight:  700;
 
 // Color Swatch
 .color-swatch {
-  background-color: $grey-base;
+  border: 1px solid $white-dark;
   border-radius: 30em;
   display: inline-block;
   margin-bottom: 1rem;

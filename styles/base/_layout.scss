@@ -3,3 +3,11 @@
 
 
 // Backgrounds
+@each $color in $colors {
+  $name:  nth($color, 1);
+  $color: nth($color, 2);
+
+  .background--#{$name} {
+    background-color: $color;
+  }
+}

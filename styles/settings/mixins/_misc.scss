@@ -9,6 +9,13 @@
 }
 
 
+// Box Shadow
+@mixin box-shadow($spread, $shadow) {
+  -webkit-box-shadow: $spread $shadow;
+  -moz-box-shadow:    $spread $shadow;
+  box-shadow:         $spread $shadow;
+}
+
 // Clearfix Mixin
 @mixin clearfix {
   *zoom: 1;
@@ -22,4 +29,12 @@
   &:after {
     clear: both;
   }
+}
+
+// Transition Effect
+@mixin transition($prop, $duration, $effect) {
+  -webkit-transition: $prop, $duration, $effect;
+  -moz-transition:    $prop, $duration, $effect;
+  -o-transition:      $prop, $duration, $effect;
+  transition:         $prop, $duration, $effect;
 }

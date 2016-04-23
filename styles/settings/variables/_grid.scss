@@ -9,5 +9,8 @@ $grid-width:         100%;
 
 
 // Breakpoints
-$breakpoint-small:   "only screen and (min-width: 20em)";
-$breakpoint-medium:  "only screen and (min-width: 30em)";
+$breakpoints: (
+  small: 320px,
+  medium: 600px,
+  large: 768px
+);

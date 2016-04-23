@@ -1,0 +1,24 @@
+// Table Variables
+// ========================================
+
+// Table Names
+$tables: (
+  table-primary: table-primary,
+  table-secondary: table-secondary
+);
+
+
+// Table Map Styles
+$table-config: (
+  table-primary: (
+    border: 1px solid $grey-base,
+    background-color: $white-dark,
+    color: $grey-dark,
+    padding: 10px
+  ),
+  table-secondary: (
+    background-color: $blue-base,
+    color: $white-base,
+    padding: 5px
+  )
+);
