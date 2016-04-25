@@ -201,6 +201,22 @@ p {
     box-shadow: 0 0 0 transparent;
     border: none; }
 
+.card {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  overflow: hidden; }
+
+.card__header {
+  height: 200px;
+  overflow-y: hidden; }
+  .card__header .card__img {
+    width: 100%; }
+
+.card__body {
+  padding: 15px; }
+
 *,
 *:after,
 *:before {

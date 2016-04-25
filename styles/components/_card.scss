@@ -1,0 +1,33 @@
+// Card Component
+// ========================================
+
+// Variables
+$card-background:     $white-base;
+$card-shadow:         rgba(0, 0, 0, 0.15);
+$card-spread:         0 0 15px;
+
+$card-header-height:  200px;
+
+$card-body-padding:   15px;
+
+
+
+// Structure
+.card {
+  @include box-shadow($card-spread, $card-shadow);
+  background-color: $card-background;
+  overflow: hidden;
+}
+
+.card__header {
+  height: $card-header-height;
+  overflow-y: hidden;
+
+  .card__img {
+    width: 100%;
+  }
+}
+
+.card__body {
+  padding: $card-body-padding;
+}
