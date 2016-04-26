@@ -3,7 +3,9 @@
 
 // Import ALL Sass files here
   // • Files should render in order of importance
+  // • We build on top of styles; we do not override styles
   // • This way we take advantage of the cascade
+  // • This also keeps our file sizes smaller
 
 
 // Settings

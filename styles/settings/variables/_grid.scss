@@ -10,7 +10,7 @@ $grid-width:         100%;
 
 // Breakpoints
 $breakpoints: (
-  small: 320px,
-  medium: 600px,
-  large: 768px
+  'small':  320px,
+  'medium': 768px,
+  'large':  1024px
 );

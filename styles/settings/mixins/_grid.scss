@@ -1,15 +1,24 @@
 // Grid Mixin
 // ========================================
 
+// Grid Mixin
+@mixin breakpoint($breakpoint) {
 
-@mixin media($breakpoint) {
+  // Check if break is in map
   @if map-has-key($breakpoints, $breakpoint) {
+
+    // Set $value equal to breakpoint value
     $value: map-get($breakpoints, $breakpoint);
 
+    // Add value to media query
     @media screen and (min-width: $value) {
       @content;
     }
+
+  } @else {
+
+    // Check if breakpoint is in map if not warn us in the console
+    @warn "The breakpoint #{$breakpoint} isn’t defined in the map $breakpoints"
   }
 
-  @warn "Unknown `#{$breakpoint}` in $breakpoints";
 }

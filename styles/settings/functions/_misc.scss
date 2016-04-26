@@ -2,9 +2,15 @@
 // ========================================
 
 @function setStyle($map, $object, $style) {
+
+  // Check if map has $key and return $value
   @if map-has-key($map, $object) {
     @return map-get(map-get($map, $object), $style);
   }
+
+  // Set warning for debugging
   @warn "The key ´#{$object} is not available in the map.";
+
+  // Return null if not defined
   @return null;
 }

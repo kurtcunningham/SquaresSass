@@ -3,7 +3,7 @@
 
 // Variables
 $button-border:                none;
-$button-display:               inline-block;
+$button-display:               block;
 $button-line-height:           normal;
 $button-padding:               20px 35px;
 $button-text-align:            center;
@@ -66,17 +66,18 @@ $button-focus-text-decoration: none;
 
     &:hover {
       background-color: lighten($bg-color, 30%);
+
+
+      // Darken background if button white
+      @if $button == 'charlie' {
+        background-color: darken($bg-color, 100%);
+        color: $white-base;
+      }
     }
 
     &:focus {
       @include box-shadow(0 0 0, transparent);
       border: $button-focus-border;
-    }
-
-
-    // If button is white add grey border
-    @if $button == 'charlie' {
-      border: 1px solid $grey-base;
     }
   }
 }

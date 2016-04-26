@@ -138,7 +138,7 @@ p {
   -o-transition: border-radius, 0.5s, ease-in-out;
   transition: border-radius, 0.5s, ease-in-out;
   border: none;
-  display: inline-block;
+  display: block;
   height: auto;
   line-height: normal;
   padding: 20px 35px;
@@ -180,10 +180,11 @@ p {
 
 .button__charlie {
   background: #FFFFFF;
-  color: #000000;
-  border: 1px solid #D8D8D8; }
+  color: #000000; }
   .button__charlie:hover {
-    background-color: white; }
+    background-color: white;
+    background-color: black;
+    color: #FFFFFF; }
   .button__charlie:focus {
     -webkit-box-shadow: 0 0 0 transparent;
     -moz-box-shadow: 0 0 0 transparent;
@@ -249,7 +250,7 @@ p {
   width: 100%;
   min-height: 1px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .column-1 {
     width: 8.33333%; }
 

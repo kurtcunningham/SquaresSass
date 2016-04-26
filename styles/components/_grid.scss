@@ -33,7 +33,7 @@
 }
 
 // Columns Loop
-@include media(medium) {
+@include breakpoint(medium) {
   @for $i from 1 through $grid-columns {
 
     .column-#{$i} {

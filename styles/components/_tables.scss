@@ -17,6 +17,7 @@ $table-width:     100%;
   @if map-has-key($table-config, $key) {
 
     .#{$value} {
+      border: setStyle($table-config, $key, border);
 
       // Table Head
       thead {
@@ -30,11 +31,7 @@ $table-width:     100%;
         padding: setStyle($table-config, $key, padding);
       }
 
-      // Table Specific Styles
-      @if border {
-        border: setStyle($table-config, $key, border);
-      }
-
+      // Style even <tr>s for certain table
       @if $value == table-secondary {
         tr:nth-child(even) {
           background-color: $white-dark;
